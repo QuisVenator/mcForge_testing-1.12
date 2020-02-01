@@ -18,12 +18,10 @@ public class GuiBrickFurnace extends GuiContainer
 	private final InventoryPlayer player;
 	private final TileEntityBrickFurnace tileentity;
 	private int errorMessageInventoryNotEmptyTicksRemaining = 0;
-	//private final ContainerBrickFurnace inventorySlotsSpecific;
 	
 	public GuiBrickFurnace(InventoryPlayer player, TileEntityBrickFurnace tileentity, World worldIn) 
 	{
 		super(new ContainerBrickFurnace(player, tileentity, worldIn));
-		//this.inventorySlotsSpecific = (ContainerBrickFurnace) this.inventorySlots;
 		this.player = player;
 		this.tileentity = tileentity;
 	}

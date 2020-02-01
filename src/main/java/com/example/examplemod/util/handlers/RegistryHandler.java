@@ -1,25 +1,15 @@
 package com.example.examplemod.util.handlers;
 
-import java.util.ArrayList;
-
 import com.example.examplemod.blocks.tileEntities.TileEntityBrickFurnace;
 import com.example.examplemod.init.ModBlocks;
 import com.example.examplemod.init.ModItems;
 import com.example.examplemod.util.IHasModel;
-import com.example.examplemod.init.ModItems;
-
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.crafting.ShapelessRecipes;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -41,7 +31,8 @@ public class RegistryHandler
 	public static void onBlockRegister(RegistryEvent.Register<Block> event)
 	{
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
-		GameRegistry.registerTileEntity(TileEntityBrickFurnace.class, "brick_furnace");
+		//TODO use modId
+		GameRegistry.registerTileEntity(TileEntityBrickFurnace.class, new ResourceLocation("qv_testing:brick_furnace"));
 	}
 	
 	@SubscribeEvent
