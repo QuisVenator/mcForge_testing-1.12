@@ -67,53 +67,7 @@ public class ContainerBrickFurnace extends Container
 		}
 		
 		this.addSlotToContainer(new SlotItemHandler(handler, 13, 208, 98));
-		/*for(int y = 0; y < 3; y++)
-		{
-			for(int x = 0; x < 3; x++)
-			{
-				this.addSlotToContainer(new Slot(this.craftMatrix, x + y*3, 191 + x*18, 38 + y*18));
-			}
-		}
-		
-		this.addSlotToContainer(new SlotCrafting(playerInventory.player, craftMatrix, craftResult, 0, 208, 98));
-		*/
 	}
-	
-	/*
-	@Override
-    public void onContainerClosed(EntityPlayer playerIn)
-    {
-		//Keep inventory when closed
-		/*
-        super.onContainerClosed(playerIn);
-
-        if (!this.world.isRemote)
-        {
-            this.clearContainer(playerIn, this.world, this.craftMatrix);
-        }
-        
-    }
-	
-	@Override
-    protected void clearContainer(EntityPlayer playerIn, World worldIn, IInventory inventoryIn)
-    {
-        if (!playerIn.isEntityAlive() || playerIn instanceof EntityPlayerMP && ((EntityPlayerMP)playerIn).hasDisconnected())
-        {
-            for (int j = 0; j < inventoryIn.getSizeInventory(); ++j)
-            {
-                playerIn.dropItem(inventoryIn.removeStackFromSlot(j), false);
-            }
-        }
-        else
-        {
-            for (int i = 0; i < inventoryIn.getSizeInventory(); ++i)
-            {
-                playerIn.inventory.placeItemBackInInventory(worldIn, inventoryIn.removeStackFromSlot(i));
-            }
-        }
-    }
-	
-	*/
 	
 	//we cancel any action of this as we manage this in detectAndSendChanges
 	@Override
@@ -233,19 +187,4 @@ public class ContainerBrickFurnace extends Container
 		}
 		return stack;
 	}
-	/*
-	public void returnCraftingInventory()
-	{
-		for(int i = 40; i < 50; i++)
-		{
-			if(!this.mergeItemStack(this.inventorySlots.get(i).getStack(), 4, 40, false))
-			{
-				this.tileentity.getWorld().spawnEntity(new EntityItem(this.tileentity.getWorld(), 
-						this.tileentity.getPos().getX(), this.tileentity.getPos().getY(), this.tileentity.getPos().getZ(), 
-						this.inventorySlots.get(i).getStack().copy()));
-				this.inventorySlots.get(i).putStack(ItemStack.EMPTY);
-			}
-		}
-	}
-	*/
 }
