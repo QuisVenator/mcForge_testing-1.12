@@ -2,17 +2,13 @@ package com.example.examplemod.blocks.containers;
 
 import com.example.examplemod.blocks.tileEntities.TileEntityBrickFurnace;
 
-import ibxm.Player;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryCraftResult;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
@@ -27,15 +23,12 @@ public class ContainerBrickFurnace extends Container
 {
 	private final TileEntityBrickFurnace tileentity;
 	private InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
-	private InventoryCraftResult craftResult = new InventoryCraftResult();
 	private int cookTime, totalCookTime, burnTime, currentBurnTime;
 	private int craftingVisible;
 	private final World world;
-	private final EntityPlayer player;
 	
 	public ContainerBrickFurnace(InventoryPlayer playerInventory, TileEntityBrickFurnace tileentity, World worldIn) 
 	{
-		this.player = playerInventory.player;
 		this.world = worldIn;
 		this.tileentity = tileentity;
 		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);

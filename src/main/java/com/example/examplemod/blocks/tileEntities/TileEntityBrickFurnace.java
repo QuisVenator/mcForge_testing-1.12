@@ -1,3 +1,5 @@
+//TODO cleanup
+
 package com.example.examplemod.blocks.tileEntities;
 
 import com.example.examplemod.blocks.BlockBrickFurnace;
@@ -5,7 +7,6 @@ import com.example.examplemod.recipes.RecipesBrickFurnace;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -36,7 +37,6 @@ public class TileEntityBrickFurnace extends TileEntity implements ITickable
 	private static final int RESULT_CRAFTING = 14;
 	private static final int INPUT_FURNACE_1 = 0;
 	private static final int INPUT_FURNACE_2 = 1;
-	private static final int INPUT_CRAFTING[] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 	
 	private ItemStackHandler handler = new HandlerDoubleInputFurnace(14, new int[] {FUEL_SLOT}, new int[] {RESULT_FURNACE, RESULT_CRAFTING});
 	private String customName;
