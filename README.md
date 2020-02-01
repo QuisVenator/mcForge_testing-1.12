@@ -1,11 +1,11 @@
-###Testing Mod
+### Testing Mod
 
-##Don't use
+## Don't use
 
   This mod currently has no real use and even the master branch will contain many bugs.
   Everying in here is solely for testing purposes!
   
-##What this mod adds
+## What this mod adds
 
   No idea. Whatever I'm currently learning how to implement.
   
@@ -22,7 +22,7 @@
     -Intercept event for sword that only works correctly with enough levels
 
 
-##What ~~might~~ * *hopefully will* * be implemented in the future
+## What ~~might~~ *hopefully will* be implemented in the future
 
   Obviously this depends on my free time, depression and coffee supply
   
@@ -40,6 +40,6 @@
     -**MAYBE!** some movement modifying stuff (faster run, float, jetpacks,... the cool stuff)
     
     
-###WARNINGS:
+### WARNINGS:
 
   I **really** suck at coding. I have no idea what Java code should be. Some of this code was written drunk at 3:00AM. You shouldn't look   at this if you value your eyes!
