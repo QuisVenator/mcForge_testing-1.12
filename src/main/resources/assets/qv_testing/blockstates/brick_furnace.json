@@ -1,0 +1,40 @@
+{
+	"forge_marker": 1,
+	"defaults":
+	{
+		"model": "qv_testing:brick_furnace"
+	},
+    "variants": 
+    {
+    	"facing":
+    	{
+    		"north":
+    		{
+    			
+    		},
+    		"south":
+    		{
+    			"y":180
+    		},
+    		"east":
+    		{
+    			"y":90
+    		},
+    		"west":
+    		{
+    			"y": 270
+    		}
+    	},
+    	"burning":
+    	{
+    		"true":
+			{
+				"model": "qv_testing:brick_furnace_on"
+			},
+			"false":
+			{
+				"model": "qv_testing:brick_furnace"
+			}    		
+    	}
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+   
+    "ingredients":
+    [
+    {
+		"item": "qv_testing:obsidian_glass_shard"
+    },
+    {
+    	"item": "qv_testing:obsidian_sword",
+		"data":32767
+    },
+    {
+    	"item": "minecraft:slime_ball"
+    }
+    ],
+   
+    "result":
+    {
+        "item": "qv_testing:obsidian_sword"
+    }
+}

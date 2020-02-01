@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "qv_testing:test_glass_block" }
+    }
+}

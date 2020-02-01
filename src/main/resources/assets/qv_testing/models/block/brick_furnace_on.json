@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "north": "blocks/furnace_front_on",
+       "up": "blocks/crafting_table_top",
+       "east": "blocks/stonebrick",
+       "south": "blocks/stonebrick",
+       "west": "blocks/stonebrick",
+       "down": "blocks/obsidian",
+       "particle": "blocks/stonebrick"
+   }
+}
